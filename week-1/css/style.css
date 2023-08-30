@@ -19,13 +19,14 @@
 
 .container {
     max-width: 1200px;
-    width: 90%;
     margin: 0 auto;
 }
 
 .main-header {
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header-logo {
@@ -58,6 +59,8 @@
 
 
 .banner {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     background-image: url(../img/banner.png);
     background-size: cover;
@@ -84,6 +87,8 @@
 ================= */
 
 .main-title {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
@@ -93,6 +98,8 @@
 }
 
 .col-box {
+    width: 90%;
+    margin: 0 auto;
     margin-top: 40px;
     justify-content: space-between;
     flex-wrap: wrap;
