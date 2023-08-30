@@ -38,6 +38,23 @@
     font-size: 20px;
 }
 
+.mobile-menu:hover {
+    cursor: pointer;
+    background-color: rgb(25, 79, 123);
+    border-radius: 4px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 24px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+
 .header-nav a {
     display: block;
     padding: 5px 10px;
@@ -51,6 +68,11 @@
     color: rgb(33, 103, 160);
     border-radius: 4px;
 }
+
+.mobile-menu {
+    display: none;
+}
+
 
 
 /* =================
@@ -105,21 +127,22 @@
     flex-wrap: wrap;
 }
 
-.col-box a {
+.col {
     display: block;
     width: 48%;
-    padding: 40px 50px;
-    text-decoration: none;
     background: rgb(204, 223, 235);
-    color: rgb(47, 47, 47);
     border-radius: 8px;
     margin-bottom: 30px;
-
+    display: block;
+    padding: 40px 50px;
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    border-radius: 8px;
 }
 
 .col-box a:hover {
     background-color: rgb(227, 237, 244);
-    box-shadow: 5px 5px 5px lightgray
+    box-shadow: 2px 2px 5px lightgray
 }
 
 .col-box a:active {
@@ -152,13 +175,49 @@
     color: white;
     padding: 5px 15px;
     background-color: rgb(66, 134, 176);
-    border: 0px;
+    border: 2px solid rgb(66, 134, 176);
     border-radius: 4px;
 }
 
 .readmore button:hover {
     cursor: pointer;
     background-color: white;
-    color: black;
-    border: 1px solid rgb(66, 134, 176);
+    color: rgb(66, 134, 176);
+    border: 2px solid rgb(66, 134, 176);
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .header-nav {
+        display: none;
+    }    
+
+    .mobile-menu {
+        display: inline-block;
+        padding: 8px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .header-nav {
+        display: none;
+    }    
+
+    .mobile-menu {
+        display: inline-block;
+        padding: 8px;
+    }
+
+    
+    .col {
+        width: 100%;
+    }
+    
+
 }
