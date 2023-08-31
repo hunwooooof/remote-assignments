@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    border: 0px;
+}
+
+
+/* ==================
+    HEADER
+=================== */
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: #fff;
+    padding: 0 16px 0 24px;
+    box-shadow: 0 2px 10px gray;
+}
+
+.main-logo {
+    width: 216px;
+}
+
+.header-navbar {
+    display: flex;
+}
+
+.header-navbar button {
+    color: #5F6368;
+    background-color: #fff;
+    border: 0px;
+    padding: 0 18px;
+}
+
+.header-navbar li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #F1F3F4;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.search-box input {
+    border: 0px;
+    background-color: #F1F3F4;
+}
+
+.select-language-btn {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #5F6368;
+    padding: 0 7px 0 11px;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0 7px 0 11px;
+}
+
+.profile-btn {
+    border: 1px solid rgb(218, 220, 224);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.profile-btn span {
+    color: #5F6368;
+}
+
+.profile-btn:hover {
+    background: #E7EAED;
+}
+
+.avatar-btn {
+    background: #fff;
+    width: 48px;
+    height: 48px;
+}
+
+.avatar-btn:hover {
+    background: #E7F0FE;
+}
+
+.avatar {
+    width: 32px;
+    border-radius: 50%;
+}
