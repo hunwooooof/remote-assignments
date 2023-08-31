@@ -110,7 +110,7 @@
 }
 
 .main-section {
-    margin: 40px;
+    margin: 40px 0;
     padding: 40px 0;
     display: flex;
     justify-content: space-between;
@@ -131,6 +131,7 @@
 .title p {
     font-size: 24px;
     line-height: 1.5;
+    color: #202124;
 }
 
 .animate-box {
@@ -176,4 +177,91 @@
 .build-list .material-symbols-outlined {
     font-size: 18px;
 
+}
+
+
+
+/* ==================
+    section 2 ( interest-section )
+=================== */
+
+
+.bg-gray {
+    background-color: #F0F3F4;
+}
+
+.interests-section {
+    padding: 40px 24px 16px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.interest-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest-top button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #1a73e8;
+    font-weight: bold;
+    background: none;
+}
+
+.interest-top button:hover {
+    background: #E7F0FE;
+
+}
+
+.flex-aic {
+    display: flex;
+    align-items: center;
+}
+
+.interest-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest-list button {
+    font-size: 14px;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 8px;
+}
+
+.interest-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.interest-article article {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid rgb(218, 220, 224);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.interest-article span {
+    font-size: 12px;
+}
+
+.interest-article a {
+    font-size: 20px;
+    color: #1a73e8;
+    text-decoration: none;
+    line-height: 28px;
+}
+
+.interest-article p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #202124;
 }
