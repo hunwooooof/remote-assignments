@@ -4,9 +4,9 @@
 }
 
 
-/* ==================
+/* ================================================
     HEADER
-=================== */
+================================================= */
 
 
 .main-header {
@@ -100,9 +100,9 @@
 }
 
 
-/* ==================
+/* ================================================
     section 1 ( main-section )
-=================== */
+================================================= */
 
 .container {
     max-width: 1500px;
@@ -181,9 +181,9 @@
 
 
 
-/* ==================
+/* ================================================
     section 2 ( interest-section )
-=================== */
+================================================= */
 
 
 .bg-gray {
@@ -244,6 +244,7 @@
     padding: 16px;
     background: #fff;
     border: 1px solid rgb(218, 220, 224);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -264,4 +265,68 @@
     font-size: 16px;
     line-height: 1.5;
     color: #202124;
+}
+
+
+
+
+/* ================================================
+    section 3 ( product-section )
+================================================= */
+
+.product-section {
+    padding: 40px 0;
+}
+
+.product-section h2 {
+    font-size: 48px;
+    color: #202124;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-list {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-list a {
+    width: 23.5%;
+    text-decoration: none;
+    color: #202124;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-list a:hover {
+    text-decoration: underline #1a73e8;
+}
+
+.product-box {
+    padding: 8px 32px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-box figure {
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box img {
+    width: 64px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 18px;
 }
