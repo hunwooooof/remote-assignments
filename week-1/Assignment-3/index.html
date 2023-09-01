@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
     <title>Google for Developers - from AI and Cloud to Mobile and Web</title>
@@ -18,19 +21,21 @@
             <button><li>Events</li></button>
             <button><li>More<span class="material-symbols-outlined">arrow_drop_down</span></li></button>
         </ul>
-        <div class="search-box">
-            <span class="material-symbols-outlined">search</span>
-            <input type="search" name="search" id="search" placeholder="Search">
+        <div class="header-right">
+            <div class="search-box">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <button type="button" class="select-language-btn">
+                <span class="material-symbols-outlined">language</span>
+                English
+                <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <button type="button" class="profile-btn"><span class="material-symbols-outlined">more_vert</span></button>
+            <button type="button" class="avatar-btn">
+                <img src="img/avatar.jpeg" alt="user-avatar" class="avatar">
+            </button>
         </div>
-        <button type="button" class="select-language-btn">
-            <span class="material-symbols-outlined">language</span>
-            English
-            <span class="material-symbols-outlined">arrow_drop_down</span>
-        </button>
-        <button type="button" class="profile-btn"><span class="material-symbols-outlined">more_vert</span></button>
-        <button type="button" class="avatar-btn">
-            <img src="img/avatar.jpeg" alt="user-avatar" class="avatar">
-        </button>
     </header>
     <!-- 標題動畫 -->
     <section class="container">
@@ -57,8 +62,10 @@
     <section class="bg-gray">
         <div class="interests-section">
             <div class="interest-top">
-                <span class="flex-aic">Based on your Developer Profile interests<span class="material-symbols-outlined">info</span></span>
-                <button type="button" class="flex-aic">
+                <span class="flex-aic">Based on your Developer Profile interests
+                    <button type="button" class="info-btn"><span class="material-symbols-outlined">info</span></button>
+                </span>
+                <button type="button" class="save-profile-btn flex-aic">
                     <span class="material-symbols-outlined">account_circle</span>Save Interests to Profile
                 </button>
             </div>
@@ -79,34 +86,69 @@
             <div>
                 <div class="interest-article">
                     <article>
-                        <span><span class="material-symbols-outlined">web</span>PRODUCT</span>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
                         <h3><a href="#">Firebase Authentication</a></h3>
                         <p>Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and...</p>
+                        <div class="product-tag">
+                            <img src="https://www.gstatic.com/devrel-devsite/prod/vbad4fd6eb290ad214822e7a397f826be8dbcc36ca2a922ba48f41fb14286829c/firebase/images/icon.svg" alt="Firebase Logo">
+                            <span>Firebase</span>
+                        </div>
                     </article>
                     <article>
-                        <span><span class="material-symbols-outlined">web</span>PRODUCT</span>
-                        <h3><a href="#">Firebase Authentication</a></h3>
-                        <p>Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and...</p>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Google AdMob</a></h3>
+                        <p>Google AdMob is an easy way to monetize mobile apps with targeted, in-app advertising.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Ads</span>
+                        </div>
                     </article>
                     <article>
-                        <span><span class="material-symbols-outlined">web</span>PRODUCT</span>
-                        <h3><a href="#">Firebase Authentication</a></h3>
-                        <p>Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and...</p>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Google Workspace</a></h3>
+                        <p>Enhance and connect to Google Workspace apps.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Cloud</span>
+                        </div>
                     </article>
                     <article>
-                        <span><span class="material-symbols-outlined">web</span>PRODUCT</span>
-                        <h3><a href="#">Firebase Authentication</a></h3>
-                        <p>Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and...</p>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Actions on Google</a></h3>
+                        <p>Create, manage, and deploy your Actions projects.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Google Assistant</span>
+                        </div>
                     </article>
                 </div>
-                <ul>
-                    <li><button type="button"></button></li>
-                    <li><button type="button"></button></li>
-                    <li><button type="button"></button></li>
-                </ul>
+                <div class="interest-article-swich">
+                    <button type="button"><span class="material-symbols-outlined">
+                        radio_button_unchecked
+                        </span></button>
+                    <button type="button"><span class="material-symbols-outlined">
+                        radio_button_unchecked
+                        </span></button>
+                    <button type="button"><span class="material-symbols-outlined">
+                        radio_button_unchecked
+                        </span></button>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Product -->
     <section class="container">
         <div class="product-section">
             <h2>Featured products</h2>
@@ -195,6 +237,9 @@
                         <p>Modern tools and features that help you build high quality web experiences.</p>
                     </div>
                 </a>
+            </div>
+            <div class="view-all-btn">
+                <a href="#">View all developer products</a>
             </div>
         </div>
     </section>
