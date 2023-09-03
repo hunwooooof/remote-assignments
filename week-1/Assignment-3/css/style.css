@@ -228,7 +228,7 @@
     gap: 16px;
 }
 
-.interest-top {
+.interest-flex {
     display: flex;
     justify-content: space-between;
 }
@@ -267,11 +267,6 @@
 .flex-aic {
     display: flex;
     align-items: center;
-}
-
-.interest-list {
-    display: flex;
-    justify-content: space-between;
 }
 
 .interest-list button {
@@ -356,7 +351,7 @@
     background: #F1F3F4;
 }
 
-.interest-article-swich {
+.btn-swich {
     margin-top: 10px;
     padding-bottom: 20px;
     display: flex;
@@ -364,12 +359,12 @@
     justify-content: center;
 }
 
-.interest-article-swich button {
+.btn-swich button {
     background: none;
     cursor: pointer;
 }
 
-.interest-article-swich .material-symbols-outlined {
+.btn-swich .material-symbols-outlined {
     font-variation-settings:
     'FILL' 1,
     'wght' 100,
@@ -379,7 +374,7 @@
     color: #BDC1C6;
 }
 
-.interest-article-swich .material-symbols-outlined:hover {
+.btn-swich .material-symbols-outlined:hover {
     color: #5F6368;
 }
 
@@ -451,7 +446,8 @@
 }
 
 
-.view-all-btn a {
+
+.btn a {
     background: #1a73e8;
     font-size: 14px;
     color: #fff;
@@ -460,7 +456,58 @@
     border-radius: 4px;
 }
 
-.view-all-btn a:hover {
+.btn a:hover {
     background: #1964CC;
     box-shadow: 0 1px 2px #5F6368;
+}
+
+
+/* ================================================
+    section 4 ( TRENDING NEWS )
+================================================= */
+
+.section-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending-news-box {
+    padding: 32px 40px;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 8px;
+    color: #202124;
+    gap: 80px;
+    align-items: center;
+}
+
+.trending-news-box-40 {
+    width: 40%;
+}
+
+.trending-news-box-60 {
+    width: 60%;
+}
+
+.section-tag {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.trending-news-box h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: 24px;
+}
+
+.trending-news-box p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.trending-news-box img {
+    width: 100%;
+    border-radius: 8px;
 }
