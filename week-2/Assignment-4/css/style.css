@@ -45,8 +45,8 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    margin-top: -15px;
-    margin-right: 20px;
+    margin-top: -14px;
+    margin-right: 5vw;
     font-size: 16px;
     background: none;
     cursor: pointer;
@@ -55,12 +55,12 @@
 }
 
 .quit-menu-btn:hover {
-    background: #000;
+    background: #020202;
 }
 
 .mobile-menu:hover {
     cursor: pointer;
-    background-color: #000;
+    background-color: #020202;
     border-radius: 8px;
 }
 
@@ -91,6 +91,8 @@
 
 .mobile-menu {
     display: none;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -207,7 +209,9 @@
     border: 2px solid rgb(66, 134, 176);
 }
 
-
+.article-more {
+    display: none;
+}
 
 
 
@@ -225,19 +229,6 @@
         padding: 40px 0;
         background-color: rgb(53, 110, 145);
     }
-/* 
-
-    .quit-menu-btn {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        background: none;
-        cursor: pointer;
-        border: 0;
-    } */
 
     .header-nav a {
         display: block;
