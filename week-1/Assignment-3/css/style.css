@@ -517,11 +517,89 @@
 }
 
 .new-article-box {
-    padding: 64px 0;
+    padding: 40px 0;
     align-items: center;
     gap: 20px;
+    color: #202124;
 }
 
 .news-box-50 {
     width: 50%;
+}
+
+.find-article-h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.find-article-p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+
+.btn-white {
+    background: #fff;
+    font-size: 14px;
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: 1px solid rgb(218, 220, 224);
+}
+
+.btn-white:hover {
+    border: 1px solid #E7F0FE;
+    background: #E7F0FE;
+}
+
+
+
+/* ================================================
+    section 5 ( FOLLOW GOOGLE )
+================================================= */
+
+
+.follow-title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 30px 0;
+    text-align: center;   
+}
+
+.follow-articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.follow-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 16px;
+    gap: 20px;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 8px;
+    color: #202124;
+
+}
+
+.follow-img {
+    width: 38px;
+}
+
+.follow-article h3 {
+    font-size: 24px;
+}
+
+.follow-article p {
+    font-size: 16px;
+    line-height: 1.5;
 }
