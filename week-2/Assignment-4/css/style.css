@@ -38,10 +38,30 @@
     font-size: 20px;
 }
 
+.quit-menu-btn {
+    display: none;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: -15px;
+    margin-right: 20px;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+}
+
+.quit-menu-btn:hover {
+    background: #000;
+}
+
 .mobile-menu:hover {
     cursor: pointer;
-    background-color: rgb(25, 79, 123);
-    border-radius: 4px;
+    background-color: #000;
+    border-radius: 8px;
 }
 
 .material-symbols-outlined {
@@ -188,17 +208,54 @@
 }
 
 
+
+
+
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
     .header-nav {
         display: none;
-    }    
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 55vw;
+        height: 100vh;
+        padding: 40px 0;
+        background-color: rgb(53, 110, 145);
+    }
+/* 
+
+    .quit-menu-btn {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        background: none;
+        cursor: pointer;
+        border: 0;
+    } */
+
+    .header-nav a {
+        display: block;
+        padding: 20px 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .header-nav a:hover {
+        border-radius: 0;
+    }
+
 
     .mobile-menu {
         display: inline-block;
         padding: 8px;
     }
-
-
 
 
 
