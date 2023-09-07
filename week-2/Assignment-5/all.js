@@ -17,7 +17,7 @@ function twoSum(nums, target) {
     let sub;
     for  (let i = 0; i < nums.length; i++) {
         sub = target - nums[i];
-        if (sub > 0) {  // There's a chance that one of the other elements equals to 'sub' 
+        if (sub > 0 && sub !== nums[i]) {  // There's a chance that one of the other elements equals to 'sub' 
             if (nums.indexOf(sub) !== -1) { // Make sure 'sub' is inside the nums
                 n1 = nums[i];
                 n2 = sub;
@@ -31,6 +31,6 @@ function twoSum(nums, target) {
 
 
 twoSum([2, 7, 11, 15], 9);                  // output: [0, 1]
-twoSum([2, 7, 11, 15], 22);                 // output: [1, 3]
+twoSum([2, 11, 7, 15], 22);                 // output: [2, 3]
 twoSum([2, 7, 11, 15, 1, 100, 55], 155);    // output: [5, 6]
 twoSum([3, 7, 11, 15, 1, 100, 345], 4);     // output: [0, 4]

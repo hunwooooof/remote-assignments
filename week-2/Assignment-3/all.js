@@ -15,7 +15,7 @@ function calculate(data) {
     }
 
     // 2. Apply the discount
-    return totalPrice * data.discount;
+    return totalPrice * (1 - data.discount);
 }
 
 const discountedPrice = calculate({
