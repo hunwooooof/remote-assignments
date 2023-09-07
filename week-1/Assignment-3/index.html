@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style1419px.css">
+    <link rel="stylesheet" href="css/style-rwd.css">
     <title>Google for Developers - from AI and Cloud to Mobile and Web</title>
     <link rel="icon" href="https://www.gstatic.com/devrel-devsite/prod/vbad4fd6eb290ad214822e7a397f826be8dbcc36ca2a922ba48f41fb14286829c/developers/images/favicon-new.png">
 </head>
@@ -17,21 +17,21 @@
     <header class="main-header">
         <img src="https://www.gstatic.com/devrel-devsite/prod/vbad4fd6eb290ad214822e7a397f826be8dbcc36ca2a922ba48f41fb14286829c/developers/images/lockup-new.svg" alt="Google for Developers Logo" class="main-logo">
         <ul class="header-navbar">
-            <button type="button"><li>Products<span class="material-symbols-outlined">arrow_drop_down</span></li></button>
-            <button type="button"><li>Solutions</li></button>
-            <button type="button"><li>Events</li></button>
-            <button type="button"><li>Learn</li></button>
+            <button type="button" id="navBarProductsBtn"><li>Products<span class="material-symbols-outlined">arrow_drop_down</span></li></button>
+            <button type="button" id="navBarSolutionsBtn"><li>Solutions</li></button>
+            <button type="button" id="navBarEventsBtn"><li>Events</li></button>
+            <button type="button" id="navBarLearnBtn"><li>Learn</li></button>
             <button type="button" id="navBarCommunityBtn"><li>Community<span class="material-symbols-outlined">arrow_drop_down</span></li></button>
             <button type="button" id="navBarBlogBtn"><li>Blog</li></button>
 
-            <button type="button"><li>More<span class="material-symbols-outlined">arrow_drop_down</span></li></button>
+            <button type="button" id="navBarMoreBtn"><li>More<span class="material-symbols-outlined">arrow_drop_down</span></li></button>
         </ul>
         <div class="header-right">
             <div class="search-box">
                 <span class="material-symbols-outlined">search</span>
                 <input type="search" name="search" id="search" placeholder="Search">
             </div>
-            <button type="button" class="select-language-btn">
+            <button type="button" class="select-language-btn" id="selectLanguageBtn1">
                 <span class="material-symbols-outlined">language</span>
                 English
                 <span class="material-symbols-outlined">arrow_drop_down</span>
@@ -88,10 +88,114 @@
                 <button type="button">Flutter</button>
                 <button type="button">Google Assistant</button>
                 <button type="button">Google Play</button>
-
+                <button type="button">Internet of Things (IoT)</button>
+                <button type="button">iOS</button>
+                <button type="button">Location/Maps</button>
+                <button type="button">Mobile</button>
+                <button type="button">Open Source</button>
+                <button type="button">Search</button>
+                <button type="button">Smart Home Ecosystem</button>
+                <button type="button">Terraform</button>
+                <button type="button">Web</button>
             </div>
             <div>
                 <div class="interest-article">
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Firebase Authentication</a></h3>
+                        <p>Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and...</p>
+                        <div class="product-tag">
+                            <img src="https://www.gstatic.com/devrel-devsite/prod/vbad4fd6eb290ad214822e7a397f826be8dbcc36ca2a922ba48f41fb14286829c/firebase/images/icon.svg" alt="Firebase Logo">
+                            <span>Firebase</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Google AdMob</a></h3>
+                        <p>Google AdMob is an easy way to monetize mobile apps with targeted, in-app advertising.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Ads</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Google Workspace</a></h3>
+                        <p>Enhance and connect to Google Workspace apps.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Cloud</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Actions on Google</a></h3>
+                        <p>Create, manage, and deploy your Actions projects.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Google Assistant</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Firebase Authentication</a></h3>
+                        <p>Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and...</p>
+                        <div class="product-tag">
+                            <img src="https://www.gstatic.com/devrel-devsite/prod/vbad4fd6eb290ad214822e7a397f826be8dbcc36ca2a922ba48f41fb14286829c/firebase/images/icon.svg" alt="Firebase Logo">
+                            <span>Firebase</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Google AdMob</a></h3>
+                        <p>Google AdMob is an easy way to monetize mobile apps with targeted, in-app advertising.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Ads</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Google Workspace</a></h3>
+                        <p>Enhance and connect to Google Workspace apps.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Cloud</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-type">
+                            <span class="material-symbols-outlined">web</span>
+                            <span>PRODUCT</span>
+                        </div>
+                        <h3><a href="#">Actions on Google</a></h3>
+                        <p>Create, manage, and deploy your Actions projects.</p>
+                        <div class="product-tag">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/16px.svg" alt="">
+                            <span>Google Assistant</span>
+                        </div>
+                    </article>
                     <article>
                         <div class="article-type">
                             <span class="material-symbols-outlined">web</span>
@@ -288,7 +392,7 @@
     <!-- WHAT'S NEW IN ANDROID -->
     <section class="bg-gray">
         <div class="container">
-            <div class="section-flex new-article-box">
+            <div class="section-flex new-article-box new-android-box">
                 <div class="news-box-50">
                     <a href="https://developer.android.com/studio" target="_blank"><img src="https://developers.google.com/static/focus/images/giraffe_1440.png" alt="" class="news-box-img"></a>
                 </div>
@@ -325,7 +429,7 @@
                 <p class="find-article-p">Keep up with Google technology. Sharpen skills and master new ones.</p>
                 <a href="" class="btn-white">Start learning</a>
             </div>
-            <div class="news-box-50">
+            <div class="news-box-50 order-first">
                 <img src="https://developers.google.com/static/homepage-assets/images/technical-skills_1440.jpg" alt="" class="news-box-img">
             </div>
         </div>
@@ -425,8 +529,10 @@
                 <a href="">Privacy</a>
             </div>
             <div class="footer-bottom-right">
-                <span class="footer-bottom-words">Sign up for the Google for Developers newsletter</span>
-                <button class="subscribe-btn">Subscribe</button>
+                <div>
+                    <span class="footer-bottom-words">Sign up for the Google for Developers newsletter</span>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
                 <button type="button" class="select-language-btn">
                     <span class="material-symbols-outlined">language</span>
                     English

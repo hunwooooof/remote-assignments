@@ -136,6 +136,7 @@
 .container {
     max-width: 1500px;
     padding: 0 24px;
+    margin: 0 auto;
 }
 
 .main-section {
@@ -269,9 +270,21 @@
     align-items: center;
 }
 
+.interest-list {
+    gap: 8px;
+    overflow-x: scroll;
+}
+
+.interest-list::-webkit-scrollbar{
+    display: none;
+}
+
 .interest-list button {
-    font-size: 14px;
-    padding: 8px 16px;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 16px;
     background: #fff;
     border: 1px solid rgb(218, 220, 224);
     border-radius: 8px;
@@ -286,9 +299,11 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    overflow: scroll;
 }
 
 .interest-article article {
+    min-width: 22vw;
     padding: 16px;
     background: #fff;
     border: 1px solid rgb(218, 220, 224);
@@ -574,10 +589,12 @@
 .follow-articles {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
 .follow-article {
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -587,7 +604,6 @@
     border: 1px solid rgb(218, 220, 224);
     border-radius: 8px;
     color: #202124;
-
 }
 
 .follow-img {
