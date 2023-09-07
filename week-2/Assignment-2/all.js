@@ -10,11 +10,11 @@
 function calculate(args) {
 
     if (args.op === '+') {      // 1. Calculate addition
-        let output = args.n1 + args.n2;
+        const output = args.n1 + args.n2;
         return output;
 
     } else if (args.op === '-') {       // 2. Calculate subtraction
-        let output = args.n1 - args.n2;
+        const output = args.n1 - args.n2;
         return output;
 
     } else {        // 3. Catch error

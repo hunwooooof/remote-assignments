@@ -10,17 +10,14 @@
 
 function twoSum(nums, target) {
     let output = [];    // Declare 'output' as answer
-    let n1;
-    let n2;             // output = [n1, n2]
 
     // Subtract each element from the target
-    let sub;
     for  (let i = 0; i < nums.length; i++) {
-        sub = target - nums[i];
+        const sub = target - nums[i];
         if (sub > 0 && sub !== nums[i]) {  // There's a chance that one of the other elements equals to 'sub' 
             if (nums.indexOf(sub) !== -1) { // Make sure 'sub' is inside the nums
-                n1 = nums[i];
-                n2 = sub;
+                const n1 = nums[i];
+                const n2 = sub;
                 output.push(nums.indexOf(n1), nums.indexOf(n2));
                 break;
             }

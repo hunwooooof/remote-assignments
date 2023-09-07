@@ -8,7 +8,7 @@
 
 function max(numbers) {
     while (numbers.length !== 1) {      // Make sure there're more than one element to compare in the array
-        let length = numbers.length;
+        const length = numbers.length;
         if (numbers[0] < numbers[length-1]) {       // Compare the first and the last element in the array
             numbers.shift();        // Shift the first element off if it's smaller
         } else {
