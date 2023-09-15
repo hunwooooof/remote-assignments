@@ -11,23 +11,30 @@ app.get('/', (req,res) => {
 })
 
 app.get('/getData', (req,res) => {
+    res.setHeader('Content-Type', 'application/json');
     const { number } = req.query;
-
+    let output = {
+        "message": "",
+        "status": ""
+    };
     
     if ( !isNaN(number) && number > 0 ) {   // 1. number is a positive integer
         let answer = 0;
         for (var i = 1; i <= number; i++) { // calculate for the answer
             answer += i;
         }
-        res.locals.output = answer;
+        output.message = answer;
+        output.status = "success";
 
     } else if ( number ) {                  // 2. number is true
-        res.locals.output = 'Wrong Parameter!';
+        output.message = 'Wrong Parameter!';
+        output.status = "error";
 
     } else {
-        res.locals.output = 'Lack of Parameter!';   
+        output.message = 'Lack of Parameter!';   
+        output.status = "error";
     }
-    res.render('getData');
+    res.send(output);
      
 
 })

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+<body>
+    <input type="text" name="number" id="inputNum">
+    <button type="submit" id="submit">Submit</button>
+    <p id="showResponse"></p>
+
+    <script>
+        const submitBtn = document.getElementById('submit');
+        const inputNum = document.getElementById('inputNum');
+        const showResponse = document.getElementById('showResponse');
+
+        // FETCH FUNCTIONS
+
+        function fetchSum() {
+            const a = inputNum.value;
+            fetch(`/getData?number=${a}`)
+                .then(res => res.json())
+                .then(body => {
+                    showResponse.innerHTML = body.message;
+                    console.log(body);
+                })
+        }
+
+        // EVENT LISTENER
+        submitBtn.addEventListener('click', fetchSum);
+
+    </script>
+</body>
+</html>
