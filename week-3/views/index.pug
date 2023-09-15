@@ -3,3 +3,24 @@ extends layout
 block main
         h1 Hello friend!
         a(href="/getData ") Do something...
+
+        input#inputNum(type='text' name='number')
+        button#submit(type='submit') Submit
+        p#showResponse
+        script.
+                const submitBtn = document.getElementById('submit');
+                const inputNum = document.getElementById('inputNum');
+                const showResponse = document.getElementById('showResponse');
+                function fetchSum() {
+                const a = inputNum.value;
+                fetch(`/getData?number=${a}`)
+                .then(res => res.json())
+                .then(body => {
+                showResponse.innerHTML = body.message;
+                console.log(body);
+                })
+                }
+                submitBtn.addEventListener('click', fetchSum);
+
+
+        
