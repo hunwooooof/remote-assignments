@@ -7,7 +7,7 @@ app.set('view engine', 'pug');  // app.set(name, value) Assigns setting name to 
 
 
 app.get('/', (req,res) => {
-    res.render('index');
+    res.redirect('/sum.html');
 })
 
 app.get('/getData', (req,res) => {

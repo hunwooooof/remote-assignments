@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+header {
+    background: #459b55;
+    padding: 10px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-flex a {
+    margin-right: auto;
+}
+
+.header-flex img {
+    width: 40px;
+}
+
+main {
+    height: 100vh;
+    background: #c6f8cf;
+    padding: 10px;
+}
+
+.answer {
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}

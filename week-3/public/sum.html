@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/css-reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Sum</title>
 </head>
 <body>
-    <input type="text" name="number" id="inputNum">
-    <button type="submit" id="submit">Submit</button>
-    <p id="showResponse"></p>
-
+    <header>
+        <div class="container header-flex">
+            <a href="/"><img src="img/logo.png" alt=""></a>
+            <input type="text" name="number" id="inputNum" placeholder="Enter a value">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p id="showResponse" class="answer"></p>
+        </div>
+    </main>
     <script>
+        const body = document.querySelector('body');
         const submitBtn = document.getElementById('submit');
         const inputNum = document.getElementById('inputNum');
         const showResponse = document.getElementById('showResponse');
@@ -29,6 +41,11 @@
 
         // EVENT LISTENER
         submitBtn.addEventListener('click', fetchSum);
+        inputNum.addEventListener('keydown', (e) => {
+            if (e.keyCode === 13 || event.key === 'Enter') {
+                fetchSum();
+            }
+        });
 
     </script>
 </body>
