@@ -11,7 +11,8 @@ app.set('view engine', 'pug');  // app.set(name, value) Assigns setting name to 
 
 
 app.get('/', (req,res) => {
-    res.redirect('/sum.html');
+    res.render('index');
+    // res.redirect('/sum.html');
 })
 
 app.get('/getData', (req,res) => {
@@ -58,7 +59,7 @@ app.get('/trackName', (req, res) => {
     const { name } = req.query;
     res.cookie('username', name);
     if ( name ) {
-        res.redirect('/myname');
+        res.redirect('/myName');
     } else {
         res.render('getname');
     }
