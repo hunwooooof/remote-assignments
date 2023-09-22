@@ -16,7 +16,7 @@ app.get('/', (req,res) => {
 })
 
 app.get('/getData', (req,res) => {
-    res.setHeader('Content-Type', 'application/json');
+    // res.setHeader('Content-Type', 'application/json');
     const { number } = req.query;
     let output = {
         "message": "",
@@ -39,7 +39,8 @@ app.get('/getData', (req,res) => {
         output.message = 'Lack of Parameter!';   
         output.status = "error";
     }
-    res.send(output);
+    // res.send(output);
+    res.json(output);
 })
 
 
