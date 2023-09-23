@@ -21,12 +21,6 @@ function App() {
           <Article data={articleData}/>
         </div>
         <ReadMore/>
-        {/* <div className="readmore">
-          <button id="readMoreBtn">閱讀更多</button>
-        </div>
-        <div className="col-box article-more" id="articleMore">
-          <Article data={articleData2}/>
-        </div> */}
       </main>
     </>
   );
