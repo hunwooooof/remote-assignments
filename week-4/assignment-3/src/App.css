@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-header, .header-nav, .col-box, .readmore {
+  display: flex;
+}
+
+
+/* =================
+  HEADER
+================= */
+
+.header-container {
+  background-color: rgb(66, 134, 176);
+  padding: 10px 0;
+  margin-bottom: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 250px;
+}
+
+.header-nav {
+  gap: 30px;
+  font-size: 20px;
+}
+
+.quit-menu-btn {
+  display: none;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: -14px;
+  margin-right: 5vw;
+  font-size: 16px;
+  background: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+}
+
+.quit-menu-btn:hover {
+  background: #020202;
+}
+
+.mobile-menu:hover {
+  cursor: pointer;
+  background-color: #020202;
+  border-radius: 8px;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 24px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+
+.header-nav a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-nav a:hover {
+  background-color: white;
+  color: rgb(33, 103, 160);
+  border-radius: 4px;
+}
+
+.mobile-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+/* =================
+  BANNER
+================= */
+
+
+.banner {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  background-image: url(../public/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  margin-bottom: 80px;
+  border-radius: 8px;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* =================
+  MAIN
+================= */
+
+.main-title {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: rgb(0, 0, 0, 0.6);
+  border-bottom: 4px solid rgb(0, 0, 0, 0.3);
+}
+
+.col-box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: block;
+  width: 48%;
+  background: rgb(204, 223, 235);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: block;
+  padding: 40px 50px;
+  text-decoration: none;
+  color: rgb(47, 47, 47);
+  border-radius: 8px;
+}
+
+.col-box a:hover {
+  background-color: rgb(227, 237, 244);
+  box-shadow: 2px 2px 5px lightgray
+}
+
+.col-box a:active {
+  background-color: rgb(66, 134, 176, 0.5);
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.col p {
+  line-height: 1.5;
+  color: rgb(48, 48, 48);
+}
+
+
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.readmore {
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.readmore button {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 15px;
+  background-color: rgb(66, 134, 176);
+  border: 2px solid rgb(66, 134, 176);
+  border-radius: 4px;
+}
+
+.readmore button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(66, 134, 176);
+  border: 2px solid rgb(66, 134, 176);
+}
+
+.article-more {
+  display: none;
+}
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .header-nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 55vw;
+      height: 100vh;
+      padding: 40px 0;
+      background-color: rgb(53, 110, 145);
+  }
+
+  .header-nav a {
+      display: block;
+      padding: 20px 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .header-nav a:hover {
+      border-radius: 0;
+  }
+
+
+  .mobile-menu {
+      display: inline-block;
+      padding: 8px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .header-nav {
+      display: none;
+  }    
+
+  .mobile-menu {
+      display: inline-block;
+      padding: 8px;
+  }
+
+  
+  .col {
+      width: 100%;
+  }
+  
+
+}
